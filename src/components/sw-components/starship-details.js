@@ -18,8 +18,8 @@ const StarshipDetails = (props) => {
 
 const mapMethodsToProps = (apiService) => {
     return {
-        getData: apiService.getPerson,
-        getImageUrl: apiService.getPersonImage
+        getData: apiService.getStarship,
+        getImageUrl: apiService.getStarshipImage
     }
 }
 
