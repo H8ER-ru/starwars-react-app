@@ -23,4 +23,4 @@ const mapMethodsToProps = (apiService) => {
     }
 }
 
-export default withApiService(StarshipDetails, mapMethodsToProps)
+export default withApiService(mapMethodsToProps)(StarshipDetails)
