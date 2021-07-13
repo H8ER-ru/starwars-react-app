@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './person-details.css';
 import ApiService from "../../services/api-service";
+import PropTypes from "prop-types";
 
 const Record = ({item, field, label}) => {
     return (
@@ -18,6 +19,12 @@ export {
 
 
 export default class ItemDetails extends Component {
+
+    static propTypes = {
+        getData: PropTypes.func,
+        itemId: PropTypes.number,
+        getImageUrl: PropTypes.func
+    }
 
     apiService = new ApiService()
 
